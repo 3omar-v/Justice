@@ -4,12 +4,46 @@
     --color-two: #CCA96C;
     --color-three: #ffffff;
     --color-four: #000000;
+    --color-five: #949494;
 }
 
 *
 {
     padding: 0px;
     margin: 0px;
+}
+
+body
+{
+    animation-name: body;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+
+@keyframes body 
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+.btn
+{
+    background: linear-gradient(45deg, var(--color-one) 0% 50% , var(--color-two) 50% 100%);
+    background-size: 250%;
+    background-position: left;
+    transition: all 0.5s;
+    border: none;
+}
+
+.btn:hover
+{
+    background-position: right;
 }
 
 /* ========================================================================================= */
@@ -89,3 +123,142 @@
 
 
 /* ========================================================================================= */
+
+
+
+/* ========= >> NavBar << ========= */
+
+nav
+{
+    background-color: var(--color-three);
+}
+
+nav > div > .logo
+{
+    background-color: var(--color-one);
+    color: var(--color-two);
+    padding-block: 1.9rem;
+    font-size: 1rem;
+    overflow:hidden;
+}
+
+.contact 
+{
+    color: var(--color-five);
+}
+
+.contact > p 
+{
+    font-size: 15px;
+}
+
+.contact > p > i
+{
+    color: var(--color-two);
+}
+
+.social > ul > li
+{
+    color: var(--color-two);
+    padding: 0.2rem;
+    border-radius: 0.2rem;    
+    border: 1px solid var(--color-two);
+    transition: all 0.5s;
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+}
+.social > ul > li:hover
+{
+    background-color: var(--color-two);
+    color: var(--color-three);
+}
+
+.active1
+{
+    color: var(--color-two);
+}
+
+.nav-item > a
+{
+    font-size: 20px;
+}
+
+.nav-item > a:hover
+{
+    color: var(--color-two);
+}
+
+/* ========= >> NavBar End << ========= */
+
+
+/* ========================================================================================= */
+
+
+/* ========= >> footer << ========= */
+
+footer > .lists > section > h3
+{
+    font-size: large;
+}
+
+.lists
+{
+    background-color: var(--color-one);
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.lists>section
+{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    line-height: 1.8
+}
+
+.lists>section>p
+{
+    color: rgb(172, 172, 172);
+}
+
+.lists>section>ul
+{
+    padding: 0px;
+    list-style: none;
+    color: rgb(172, 172, 172);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lists>section>ul>li
+{
+    border-bottom: solid rgba(172, 172, 172, 0.199) 0.2px;
+    padding-bottom: 10px;
+}
+
+.socialNav > ul > li
+{
+    color: var(--color-two);
+    padding: 0.7rem;
+    border-radius: 0.2rem;    
+    border: 1px solid var(--color-two);
+    transition: all 0.5s;
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+}
+
+.socialNav > ul > li:hover
+{
+    background-color: var(--color-two);
+    color: var(--color-three);
+}
+
+/* ========= >> footer End << ========= */
+
+
+/* ========================================================================================= */
+
