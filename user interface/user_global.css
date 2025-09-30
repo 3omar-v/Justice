@@ -35,10 +35,11 @@ body
 .btn
 {
     background: linear-gradient(45deg, var(--color-one) 0% 50% , var(--color-two) 50% 100%);
-    background-size: 250%;
+    background-size: 255%;
     background-position: left;
     transition: all 0.5s;
     border: none;
+    padding: 10px;
 }
 
 .btn:hover
@@ -70,11 +71,123 @@ body
 
 
 
-/* === >> code */
+    /* === >> section one */
 
 
+.welcome_background
+{
+    background-image: url("assets/images/law.jpg");
+    background-position: center; 
+    height: 900px;
+}
+
+.welcome
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    color: white;
+}
+
+.welcome>p
+{
+    font-size: x-large;
+}
+
+.welcome>h1
+{
+    font-size: 70px;
+}
+
+.welcome>div>button
+{
+    border-radius: 5px;
+    padding-block: 13px;
+    padding-inline: 40px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.welcome>div>.Learn
+{
+    border: solid 2px rgb(153, 130, 100);
+    background-color: rgb(153, 130, 100);
+}
+
+.welcome>div>.Contact
+{
+    border: solid 2px white;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.welcome>div>button:hover
+{
+    color: black;
+    background-color: white;
+    border: solid 2px white;
+}
+
+
+
+/* === >> Our Practice  */
+
+.swiper {
+        width: 100%;
+        padding: 50px;
+        background-color: var(--color-two);
+    }
+    .swiper-slide {
+        text-align: center;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .service-icon {
+        width: 80px;
+        height: 80px;
+        background: #333;
+        color: #c1a26e;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        margin: 0 auto 15px;
+    }
+    .swiper-button-prev, .swiper-button-next 
+    {
+        background: var(--color-one);
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 /* ========= >> Home End << ========= */
+
+
+
+
+/* ========= >> contact us << ========= */
+
+.contact2
+{
+    background-image: url(assets/images/law.jpg);
+    border-radius: 10px;
+    background-position: center;
+}
+
+/* ========= >> contact us end << ========= */
+
 
 
 /* ========================================================================================= */
@@ -262,3 +375,37 @@ footer > .lists > section > h3
 
 /* ========================================================================================= */
 
+
+
+@media (max-width: 600px) 
+{
+    .welcome>p
+    {
+        font-size: large;
+        margin-inline: 5px;
+    }
+
+    .welcome>h1
+    {
+        font-size: 50px;
+    }
+
+    .welcome>div>button
+    {
+        padding: 15px;
+        padding-inline: 35px;
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    nav > div > .logo
+    {
+        padding-block: 0.5rem;
+        background-color: white;
+    }
+
+    .social
+    {
+        display: none;
+    }
+}
